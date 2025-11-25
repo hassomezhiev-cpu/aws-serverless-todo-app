@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO App - AWS Serverless</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 TODO List</h1>
+        <p class="subtitle">Serverless applikation på AWS</p>
+
+        <div class="add-todo">
+            <input type="text" id="todoInput" placeholder="Vad behöver du göra?" onkeypress="if(event.key==='Enter') addTodo()">
+            <button onclick="addTodo()">Lägg till</button>
+        </div>
+
+        <div id="todoList" class="todo-list">
+        </div>
+
+        <div class="stats">
+            <span id="totalTodos">0 uppgifter</span>
+            <span id="completedTodos">0 klara</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
